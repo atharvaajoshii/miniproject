@@ -19,9 +19,52 @@
         </div>
     </header>
     <nav class="navigation-bar">
-        <a href="purana.html">Home</a>
-        <a href="signin.html">Sign In</a>
-        <a href="signup.html">Sign Up</a>
+        <a href="index.html">Home</a>
+        
     </nav>
+        <center>
+        <main id="yay" class="signin-container">
+            <form action="home.html">
+                <div class="signin-box">
+                    <h2>Sign Up</h2>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="password">Create Password</label>
+                            <input type="password" id="password" name="password" placeholder="Password must be more than 8 character" required>
+                        </div>
+
+                        <button type="submit" class="btn">Sign up</button>
+
+                        <p class="signup-link">Already have an account? <a href="signin.html">Sign In</a></p>
+                    </form>
+                </div>
+            </form>
+        </main>
+            <footer>
+        <div class="footer-content">
+            <ul class="links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <div class="copy">
+                &copy; Atharva &nbsp; Anvesh &nbsp; Athul &nbsp; Anirudh &nbsp; | &nbsp; All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    </center>
+    <script src="signup-validation.js"></script>
 </body>
 </html>

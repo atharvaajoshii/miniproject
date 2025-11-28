@@ -19,9 +19,121 @@
         </div>
     </header>
     <nav class="navigation-bar">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="signin.html">Sign In</a>
         <a href="signup.html">Sign Up</a>
     </nav>
+    <main id="yay">
+        <center>
+            <h1>College Map</h1>
+        </center>
+        <ul class="buildings">
+            <li>
+                <a href="cv.html">CV Raman Block</a>
+                <ul class="information">
+                    <li>Floor: 5 </li>
+                    <li>
+                        labs:<ul>
+                            <li>english Lab:5th floor</li>
+                            <li>C programming and Python Programming Lab:5th floor</li>
+                            <li>EV Lab:5th floor</li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="apj.html">APJ Kalam Block</a>
+                <ul class="information">
+                    <li>Floor: 5</li>
+                    <li>
+                        labs:
+                        <ul>
+                            <li>Bio Lab:2nd floor</li>
+                            <li>OOP Lab:4th floor</li>
+                            <li>DS Lab:4th floor</li>
+                        </ul>
+
+
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="smv.html">SMV Block</a>
+                <ul class="information">
+                    <li>Floor:6</li>
+                    <li>
+                        labs:<ul>
+                            <li>MAT Lab:5th floor</li>
+                            <li>BEE Lab:3rd floor</li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="rajaraman.html">V Rajaraman Block</a>
+                <ul class="information">
+                    <li>Floor: 5 </li>
+                    <li>labs:
+                    <ul>
+                        <li>Robotics lab:2nd floor</li>
+                    </ul>
+
+
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="ramanujan.html">S. Ramanujan Block</a>
+                <ul class="information">
+                    <li>Floor: 5 </li>
+                    <li>
+                        labs:<ul>
+                            <li>Chemistry Lab:1st floor</li>
+                            <li>Physics Lab:1st floor</li>
+                            <li>ADLD lab:3rd floor</li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="atal.html">Atal Block</a>
+                <ul class="information">
+                    <li>Floor:</li>
+                    <li>
+                        labs:<ul>
+                            <li>FEWD Lab:2nd floor</li>
+                            <li>R Lab :2nd floor</li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </main >
+        <footer>
+        <div class="footer-content">
+            <ul class="links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <div class="copy">
+                &copy; Atharva &nbsp; Anvesh &nbsp; Athul &nbsp; Anirudh &nbsp; | &nbsp; All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const buildingLinks = document.querySelectorAll('.buildings a');
+        buildingLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+             event.preventDefault();
+            alert('Please sign in or sign up to access this page.');
+        });
+        });
+    </script>
 </body>
+
 </html>

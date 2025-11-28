@@ -47,12 +47,16 @@ body .navigation-bar a:hover {
 /* ---------------- Main Section ---------------- */
 main {
     padding: 10px 20px;
+
+}
+#yay{
+        height: 80vh;
 }
 
 main h1 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #000000;
+    color: #d0caca;
 }
 
 main .buildings {
@@ -60,7 +64,7 @@ main .buildings {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 10px 100px 100px 100px;
+    padding: 60px 100px 100px 100px;
     margin: 10px;
 }
 
@@ -110,12 +114,12 @@ main .buildings > li > a::before {
     background: rgba(3, 159, 231, 0.4);
     z-index: -1;
     border-radius: 10px;
-    animation: slideDownOverlay 0.5s ease-in-out forwards; /* default reverse state */
+    animation: slideDownOverlay 0.4s ease-in-out forwards; /* default reverse state */
 }
 
 /* hover: slide up from bottom */
 main .buildings > li > a:hover::before {
-    animation: slideUpOverlay 0.5s ease-in-out forwards;
+    animation: slideUpOverlay 0.4s ease-in-out forwards;
 }
 
 /* text + slight zoom on hover */
@@ -153,7 +157,7 @@ main .buildings > li:hover .information {
 .navigation-bar {
     background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
-    width: 400px;
+    width: auto;
     justify-content: space-between;
     height: 35px;
     border-end-end-radius: 30px;
@@ -182,6 +186,7 @@ nav a {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     width: 340px;
+    margin-top: 70px ;
     text-align: center;
     color: #fff;
 }
@@ -211,3 +216,107 @@ nav a {
     border-radius: 8px;
 }
             
+/* SMV */
+.block-box {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.block-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.block-details h2 {
+    color: #ffd700;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.block-details p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+button{
+    background-color:#ffd700;
+    border: none;
+    height: 1.9rem;
+    width: 5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    
+}
+a{
+    color: #ffd700;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+main h1{
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ---------------- Footer ---------------- */
+footer {
+    background-color: #535252;  /* solid, non-transparent dark base */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid #ffd700; /* subtle gold border accent */
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer .links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+footer .links li {
+    display: inline-block;
+}
+
+footer .links a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .links a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+footer .copy {
+    font-size: 0.95em;
+    color: #bbbbbb;
+    letter-spacing: 0.5px;
+}
